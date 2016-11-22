@@ -1,6 +1,0 @@
-use_frameworks!
-target 'Base64Tools_Tests' do
-  pod 'Base64Tools', :path => '../'
-  
-  
-end

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Base64Tools'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Base64Tools.'
+  s.version          = '0.0.1'
+  s.summary          = 'UIImage/NSString categories to quickly convert UIImage objects to Base64 NSString and vice-versa.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+UIImage and NSString Objective-C categories to quickly convert UIImage instances to Base64 NSString equivalents and vice-versa.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/Base64Tools'
+  s.homepage         = 'https://github.com/alejandroivan/Base64Tools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Alejandro Iván (Mac Mini de Alejandro)' => 'alejandroivan@ingenieros.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Base64Tools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Alejandro Iván Melo Domínguez' => 'alejandroivan@ingenieros.com' }
+  s.source           = { :git => 'https://github.com/alejandroivan/Base64Tools.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/alejandroivan'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
-  s.source_files = 'Base64Tools/Classes/**/*'
+  s.source_files = 'Base64Tools/*'
   
-  # s.resource_bundles = {
-  #   'Base64Tools' => ['Base64Tools/Assets/*.png']
-  # }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
